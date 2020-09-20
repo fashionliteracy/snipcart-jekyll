@@ -9,9 +9,29 @@
     </div>
   </main>
   {% include footer.html %}
-  <!--div hidden id="snipcart"
-    data-api-key="MzMxN2Y0ODMtOWNhMy00YzUzLWFiNTYtZjMwZTRkZDcxYzM4"></div-->
-<div hidden id="snipcart" data-api-key="OTk0OThhOTgtYmZjYS00NTMzLTk5ZmYtMWJlZDc4ZWI5M2QzNjM3MzYwMTA1ODY2NzMyNTU4"></div>
+<div hidden id="snipcart" data-api-key="OTk0OThhOTgtYmZjYS00NTMzLTk5ZmYtMWJlZDc4ZWI5M2QzNjM3MzYwMTA1ODY2NzMyNTU4">
+  <billing section="top">
+    <fieldset class="snipcart-form__set">
+      <div class="snipcart-form__field">
+        <snipcart-label class="snipcart__font--tiny" for="phone">Phone Number</snipcart-label>
+        <snipcart-input name="phone" required></snipcart-input">
+      </div>
+    </fieldset>
+
+  </billing>
+
+  <billing section="bottom">
+    <fieldset class="snipcart-form__set">
+      <div class="snipcart-form__field-checkbox">
+        <snipcart-checkbox name="subscribetonewsletter"></snipcart-checkbox>
+        <snipcart-label class="snipcart__font--tiny snipcart-form__label--checkbox" for="subscribetonewsletter">
+        Subscribe to newsletter
+        </snipcart-label>
+      </div>
+    </fieldset>
+
+  </billing>
+</div>
   <script src="https://cdn.snipcart.com/themes/v3.0/default/snipcart.js" defer></script>
 </body>
 </html>
